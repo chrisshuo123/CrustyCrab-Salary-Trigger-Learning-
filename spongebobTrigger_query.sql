@@ -31,3 +31,13 @@ SET salary = hourly_pay * 2080;
 2080 hours of total work in a typical year */
 
 select * from employees;
+
+/* === CREATE TRIGGER SECTION === */
+
+/* 1 - Before Hourly Pay Update Trigger */
+CREATE TRIGGER before_hourly_pay_trigger
+BEFORE UPDATE ON employees
+FOR EACH ROW
+SET NEW.salary = (NEW.hourly_pay * 2080);
+
+SHOW triggers;
