@@ -25,4 +25,9 @@ VALUES
 ALTER TABLE employees
 ADD COLUMN salary DECIMAL(10,2) AFTER hourly_pay;
 
+UPDATE employees
+SET salary = hourly_pay * 2080;
+/* NOTE: 8 hours of work / day, multiply by 52 weeks in 1 year, result is
+2080 hours of total work in a typical year */
+
 select * from employees;
