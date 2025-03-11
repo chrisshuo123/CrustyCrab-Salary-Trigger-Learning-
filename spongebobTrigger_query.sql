@@ -41,3 +41,5 @@ FOR EACH ROW
 SET NEW.salary = (NEW.hourly_pay * 2080);
 
 SHOW triggers;
+
+/* === DATABASE ROW INFORMATION DEVELOPMENT === */
