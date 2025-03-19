@@ -53,4 +53,7 @@ WHERE employee_id = 1;
 UPDATE employees
 SET hourly_pay = hourly_pay + 1;
 
+/* 3. Plankton got fired */
+DELETE FROM employees
+WHERE employee_id = 6;
 select * from employees;
