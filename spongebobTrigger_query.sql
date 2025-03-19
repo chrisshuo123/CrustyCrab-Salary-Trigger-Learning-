@@ -43,3 +43,8 @@ SET NEW.salary = (NEW.hourly_pay * 2080);
 SHOW triggers;
 
 /* === DATABASE ROW INFORMATION DEVELOPMENT === */
+/* 1. Mr. Crab gonna give himself a Raise because he's greedy */
+/* He update his hourly pay from $25.5 to $50 */
+UPDATE employees
+SET hourly_pay = 50
+WHERE employee_id = 1;
