@@ -48,3 +48,9 @@ SHOW triggers;
 UPDATE employees
 SET hourly_pay = 50
 WHERE employee_id = 1;
+
+/* 2. Now Mr. Crab feels generous for his employees, so he wanted to raise $1/hour for everyone in the company */
+UPDATE employees
+SET hourly_pay = hourly_pay + 1;
+
+select * from employees;
