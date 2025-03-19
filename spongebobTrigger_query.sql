@@ -63,3 +63,8 @@ SET hourly_pay = hourly_pay + 1;
 DELETE FROM employees
 WHERE employee_id = 6;
 select * from employees;
+
+/* 4. Plankton got recruited to crusty crabs */
+/* (after create new 'before_hourly_pay_insert' Trigger) */
+INSERT INTO employees (first_name, last_name, hourly_pay, salary, job, hire_date, supervisor_fkId)
+VALUE ('Sheldon', 'Plankton', 10, NULL, 'janitor', '2023-01-07', 5);
